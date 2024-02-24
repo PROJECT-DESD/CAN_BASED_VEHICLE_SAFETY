@@ -223,7 +223,6 @@ void CAN1_RX0_IRQHandler(void)
 	flag[1]=0;
   }
   //for lm393
-  HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &pRxHeader, r);
   if(r[1]==1){
    flag[1]=1;
   }else
@@ -231,7 +230,6 @@ void CAN1_RX0_IRQHandler(void)
    flag[1]=0;
   }
   //for lm35
-  HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &pRxHeader, r);
   if(r[2]==1){
    	  flag[2]=1;
   }else
@@ -239,7 +237,6 @@ void CAN1_RX0_IRQHandler(void)
    	flag[2]=0;
   }
   //for HW-028 Rain drop sensor;
-  HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &pRxHeader, r);
   if(r[3]==1){
   flag[3]=1;
   }else
