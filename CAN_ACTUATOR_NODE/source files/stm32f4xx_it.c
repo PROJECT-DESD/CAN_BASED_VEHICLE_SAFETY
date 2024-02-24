@@ -220,7 +220,7 @@ void CAN1_RX0_IRQHandler(void)
 	  flag[0]=1;
   }else
   {
-	flag[1]=0;
+	flag[0]=0;
   }
   //for lm393
   if(r[1]==1){
