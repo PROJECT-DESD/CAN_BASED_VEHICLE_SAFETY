@@ -1,8 +1,5 @@
 /*
  * lcd16x2_i2c.c
- *
- *  Created on: Mar 28, 2020
- *      Author: Mohamed Yaqoob
  */
 
 #include "lcd16x2_i2c.h"
